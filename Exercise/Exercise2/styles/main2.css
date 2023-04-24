@@ -1,0 +1,154 @@
+.footer-main{
+    position: absolute;
+width: 1290px;
+height: 345px;
+left: 0px;
+top: 621px;
+
+/* Neutral/White
+
+FFFFFF
+*/
+background: #FFFFFF;
+}
+.footer-main-title{
+    position: absolute;
+width: 283px;
+height: 226px;
+left: 105px;
+top: 13px;
+}
+.footer-main-title h3{
+    position: absolute;
+width: 183px;
+height: 38px;
+left: 1px;
+top: 23px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 27.8068px;
+line-height: 38px;
+/* identical to box height */
+
+
+/* Neutral/Neutral  100 */
+
+color: #242D62;
+}
+.footer-main-title p{
+    position: absolute;
+width: 245px;
+height: 68px;
+left: 1px;
+top: 88px;
+
+
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+
+
+letter-spacing: 0.02em;
+
+
+
+color: #6D7394;
+}
+.footer-main-social-subtract{
+    position: absolute;
+left: 11.46%;
+right: 86.67%;
+top: 55.96%;
+bottom: 40.2%;
+
+/* Primary/Blue */
+
+background: #159EEC;
+}
+.icon-container {
+    display: flex;
+    justify-content: center;
+    position: absolute; 
+    /* top: 55.96%; */
+    top:220px;
+    left:105px;
+bottom: 40.2%;/* Optional: center icons horizontally */
+  }
+  
+  .icon-container img {
+    float: left;
+    margin-right: 25px;
+    width: 20px;
+    height: 20px;
+    
+  }
+  .footer-main-content{
+    position: absolute;
+width: 89px;
+height: 171px;
+left: 958px;
+top: 72px;
+  }
+  .footer-table{
+    position: absolute;
+    margin-left: 680px;
+    margin-top: 390px;
+
+  }
+  .footer-table th{
+    /* font-weight: 700; */
+    font-family: 'Work Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 125%;
+color: #242D62;
+/* width: 70%; */
+
+ padding-right: 60px
+  }
+  .footer-table th a:link{
+    color: #6D7394;;
+    text-decoration: none;
+  }.footer-table th a:hover
+  { color:red;;
+    text-decoration:underline;
+cursor: pointer;}
+ 
+  .footer-table td{
+    /* position: absolute; */
+/* width: 73px;
+height: 26px;
+left: 658px;
+top: 115px; */
+
+/* Body/Body 4 */
+
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+/* identical to box height, or 26px */
+/* width: 70%; */
+letter-spacing: 0.02em;
+
+/* Neutral/Neutral 80 */
+
+color: #6D7394;
+
+  }
+  .footer-table td a:hover{
+    color:red;;
+        text-decoration:underline;
+    cursor: pointer;
+  }
+  .footer-table td a:link{
+    color: #6D7394;;
+    text-decoration: none;
+  }
+  

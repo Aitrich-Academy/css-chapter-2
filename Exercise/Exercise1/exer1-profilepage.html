@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Excercise 1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="author" content="Anphy">
+    <link href="../../images/favicon.png" rel="icon">
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        .side {
+            height: 700px;
+            width: 221px;
+
+            background-color: rgba(32, 166, 252, 1);
+
+            margin-left: -7px;
+            margin-top: -30px;
+            position: absolute;
+        }
+
+        .txt1 {
+            position: absolute;
+            height: 30px;
+            width: 226px;
+            margin-left: 34px;
+            margin-top: 31px;
+            Font-family: Open Sans;
+            font-style: Bold;
+            font-size: 25px;
+            line-height: 46px;
+            line-height: 100%;
+            align-items: Left;
+            vertical-align: Top;
+            color: white;
+        }
+        img:hover {
+  filter: brightness(70%);
+  color:aqua
+  /* Reduce the brightness of the image when it is hovered */
+}
+        .txt2 {
+            margin-left: 28px;
+            margin-top: 130px;
+            width: 236px;
+            height: 288px;
+            position: absolute;
+        }
+
+        .txt2 a:link {
+            text-decoration: none;
+            color: white;
+        }
+
+        .txt2 a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .list-item {
+            margin-left: 15px;
+            /* position: absolute; */
+        }
+
+        .txt3 {
+            font-family: DM Sans;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0px;
+            text-align: left;
+            position: absolute;
+            margin-top: 520px;
+            margin-left: 30px;
+            color: white;
+        }
+
+        .txt3 a:link {
+            text-decoration: none;
+            color: white;
+        }
+
+        .txt3 a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        .txt4 {
+            position: absolute;
+            left: 30px;
+            right: 84.24%;
+            top: 56.17%;
+            bottom: 53.23%;
+        }
+
+        .img1 {
+            position: absolute;
+            left: 2.71%;
+            right: 93.96%;
+            top: 44.22%;
+            bottom: 53.23%;
+            height: 25px;
+            width: 25px;
+
+            /* background: url(dreamy-young-woman-sunglasses-looking-front); */
+        }
+
+        .person {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 30px;
+            right: 84.24%;
+            top: 56.17%;
+            bottom: 53.23%;
+        }
+
+        .person img {
+            margin-right: 20px;
+            position: absolute;
+            left: 2.71%;
+            right: 93.96%;
+            top: 44.22%;
+            bottom: 53.23%;
+            height: 35px;
+            width: 35px;
+        }
+
+        .info {
+            /* text-align: right; */
+            margin-top: 800px;
+            margin-left: 30px;
+            color: white;
+            position: absolute;
+        }
+
+
+        .logout {
+
+            width: 150px;
+            border-radius: 10px;
+            border: gray;
+        }
+
+
+        .content-head {
+            position: absolute;
+            left: 22.99%;
+            right: 63.68%;
+            top: 1.7%;
+            bottom: 94.49%;
+        }
+
+        .content-head h3 {
+            position: absolute;
+            left: -11.99%;
+            right: 63.68%;
+            top: 1.7%;
+            bottom: 96.39%;
+            width: 200px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 20px;
+            /* identical to box height */
+
+
+            color: #3E435D;
+        }
+
+        .content-head p {
+            /* position: sticky; */
+            left: 98.2%;
+            right: 87.08%;
+            top: 16.24%;
+            bottom: 100.49%;
+            width: 200px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 64px;
+            /* identical to box height */
+
+
+            color: #ADA7A7;
+        }
+
+        .content-head-notification {
+            position: absolute;
+            width: 39px;
+            height: 36px;
+            left: 855px;
+            top: 39px;
+
+        }
+
+        .content-head-profile {
+            position: absolute;
+            width: 25px;
+            height: 5 0px;
+            left: 930px;
+            top: 39px;
+
+            /* background: url(dreamy-young-woman-sunglasses-looking-front); */
+        }
+
+        .content-side1-rectangle1 {
+            box-sizing: border-box;
+
+            position: absolute;
+            left: -20px;
+            right: 63.68%;
+            top: 100px;
+            bottom: 69.09%;
+            height: 300px;
+            width: 317px;
+            background: #FFFFFF;
+            border: 1px solid gray;
+            border-radius: 8px;
+        }
+
+        .content-side1-rectangle2 {
+            box-sizing: border-box;
+
+            position: absolute;
+            left: -20px;
+            right: 63.68%;
+            top: 417px;
+            bottom: 69.09%;
+            height: 220px;
+            width: 317px;
+            background: #FFFFFF;
+            border: 1px solid gray;
+            border-radius: 8px;
+        }
+
+        .content-side1-rectangle2 h3 {
+            position: absolute;
+            width: 77px;
+            height: 24px;
+            left: 28px;
+            top: 11px;
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height */
+
+
+            color: #000000;
+        }
+
+        .content-side1-rectangle2 p {
+            position: absolute;
+            width: 332px;
+            height: 138px;
+            left: 24px;
+            top: 48px;
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 23px;
+            /* or 164% */
+
+
+            color: #000000;
+
+            opacity: 0.4;
+        }
+
+        .content-side2-rectangle1 {
+            box-sizing: border-box;
+
+            position: absolute;
+            left: 354px;
+            right: 63.68%;
+            top: 100px;
+            bottom: 69.09%;
+            height: 171px;
+            width: 643px;
+            background: #FFFFFF;
+            border: 1px solid gray;
+            border-radius: 8px;
+        }
+
+
+
+        .content-side2-rectangle2 {
+            box-sizing: border-box;
+
+            position: absolute;
+            left: 354px;
+            right: 63.68%;
+            top: 299px;
+            bottom: 69.09%;
+            height: 180px;
+            width: 643px;
+            background: #FFFFFF;
+            border: 1px solid gray;
+            border-radius: 8px;
+        }
+
+
+        .content-side2-rectangle3 {
+            box-sizing: border-box;
+
+            position: absolute;
+            left: 354px;
+            right: 63.68%;
+            top: 517px;
+            bottom: 69.09%;
+            height: 120px;
+            width: 643px;
+            background: #FFFFFF;
+            border: 1px solid gray;
+            border-radius: 8px;
+        }
+
+
+        .content-side1-rectangle1 img {
+            position: absolute;
+            left: 38.71%;
+            right: 60.35%;
+            top: 8.48%;
+            bottom: 86.21%;
+            align-items: center;
+        }
+
+        .content-side1-rectangle1 h3 {
+            position: absolute;
+            left: 24.56%;
+            right: 58.19%;
+            top: 16.58%;
+            bottom: 83.83%;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            /* identical to box height */
+
+
+            color: #000000;
+        }
+
+        .content-side1-rectangle1 h6 {
+            position: absolute;
+            left: 32.57%;
+            right: 60.21%;
+            top: 22.44%;
+            bottom: 82.45%;
+            width: 100px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            /* identical to box height */
+
+
+            color: #000000;
+
+            opacity: 0.5;
+
+        }
+
+        .content-side1-rectangle1-rect {
+            position: absolute;
+            left: 8.65%;
+            right: 52.29%;
+            top: 42.82%;
+            bottom: 78.42%;
+            border-radius: 5px;
+            /* border: 1px solid #20A6FC; */
+            width: 200px;
+            height: 30px;
+            background: #bedef1;
+            /* opacity: 0.1; */
+        }
+
+        .content-side1-rectangle1-rect img {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 49px;
+            top: 5px;
+            bottom: 400px;
+            color: #20A6FC;
+            display: inline-block;
+        }
+
+        .content-side1-rectangle1-rect p {
+            left: 74px;
+            top: -10px;
+            bottom: 400px;
+            color: #20A6FC;
+            display: inline-block;
+            position: absolute;
+            line-height: 18px;
+        }
+
+        .content-side1-rectangle1-img1 {
+            position: absolute;
+            width: 212px;
+            height: 24px;
+            left: -65px;
+            top: 169px;
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+
+            display: inline;
+
+            color: #000000;
+
+            opacity: 0.5;
+
+            bottom: 400px;
+        }
+
+        .img2 {
+
+            left: -65px;
+            top: 289px;
+        }
+
+        .content-side1-rectangle1 span {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+
+            margin-left: 120px;
+
+
+            color: #000000;
+
+            opacity: 0.5;
+
+            bottom: 400px;
+        }
+
+        .content-side2-rectangle2-content {
+            position: absolute;
+            width: 597px;
+            height: 92px;
+            left: 78px;
+            top: 18px;
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 23px;
+            /* or 164% */
+
+
+            color: #000000;
+
+            opacity: 0.4;
+        }
+
+        .content-side2-rectangle2-content2 {
+            position: absolute;
+            width: 597px;
+            height: 92px;
+            left: 505px;
+            top: 18px;
+            color: #000000;
+
+            opacity: 0.4;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+    <div class="side">
+        <div class="txt1">
+            <p>HireMe Now!</p>
+        </div>
+        <div class="txt2">
+
+            <ul>
+                <li><img src="images/buildings-2.png" alt="Image"><span class="list-item"><a href=#>All Jobs</a></span>
+                </li><br>
+                <li><img src=images/clipboard-text.png><span class="list-item"><a href=#>My Applications</a></span></li>
+                <br>
+                <li><img src="images/message-2.png" alt="Image"><span class="list-item"><a href=#>Messages</a></span>
+                </li><br>
+                <li><img src="images/profile.png" alt="Image"><span class="list-item"><a href=#>My Profile</a></span>
+                </li><br>
+                <li><img src="images/setting-2.png" alt="Image"><span class="list-item"><a href=#>Settings</a></span>
+                </li><br>
+            </ul>
+
+        </div>
+        <!-- <div class="txt4">
+            <ul><li>hjjhjj</li></ul>
+        </div> -->
+
+        <div class="txt3">
+            <ul align="left" type="none">
+                <li>
+                    <small>Profile</small>
+                </li>
+                <li>
+                    <p>
+                        <img src="images/leslie.png" alt="profile image" width="50px" align="left">
+                        <b> Leslie Alexander </b> <br>
+                        <font size="2" face="DM Sans" color="black" align="center">
+                            Private Account
+                        </font>
+                    </p>
+                </li>
+                <li>
+                    <br>
+                    <button class="logout"> <img src="images/exit.png" alt="" width="25px"><a
+                            href="#">Logout</a></button>
+
+                </li>
+                <br>
+            </ul>
+        </div>
+
+    </div>
+    <div class="foot-1">
+        <div class="foot-side">
+            <div class="foot-side1">
+                <p>Get Notified every new job</p>
+
+                <p style="font-size: 25px;">Ideal platform for job seekers passionate about startups and
+
+                    seeking new career opportunities.</p>
+
+            </div>
+            <div class="foot-search">
+                <div class="foot-input">
+                    <!-- <input type="text" placeholder="Type your email address"> -->
+                    <p style="text-align: center;">Type your email address</p>
+                </div>
+                <button class="foot-button">Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="footer-main-title">
+                <h3>HireMe Now!</h3>
+            </div>
+            <div class="footer-main-title ">
+                <p>Ideal platform for job seekers
+                    passionate about startups and
+                    seeking new career opportunities.</p>
+            </div>
+            <div class="icon-container">
+                <a href="#"><img src="images/Subtract.png" alt="Icon 1"></a>
+                <a href="#"> <img src="images/Group 33789.png" alt="Icon 2"></a>
+                <a href="#"> <img src="images/linkedin icon.png" alt="Icon 3"></a>
+                <a href="#"> <img src="images/twitter icon.png" alt="Icon 4"></a>
+                <a href="#"> <img src="images/facebook icon.png" alt="Icon 5"></a>
+
+            </div>
+
+            <!-- <div class="footer-main-content"><ul>
+                <li>ggg</li>
+            </ul></div> -->
+
+        </div>
+        <table class="footer-table">
+            <tr>
+                <th><a href=#>About us</a></th>
+                <th><a href=#>Company</a></th>
+                <th><a href=#>Support</a></th>
+                <th><a href=#>Service</a></th>
+            <tr>
+                <td><a href=#>About us</a></td>
+                <td><a href=#>Contact us</a></td>
+                <td><a href=#>Support</a></td>
+                <td><a href=#>SEO</a></td>
+            </tr>
+            <tr>
+                <td><a href=#>Home</a></td>
+                <td><a href=#>Career</a></td>
+                <td><a href=#>Privacy</a></td>
+                <td><a href=#>UI Design</a></td>
+            </tr>
+            <tr>
+                <td><a href=#>Feature</a></td>
+                <td><a href=#>Pricing</a></td>
+                <td><a href=#>FAQ</a></td>
+                <td><a href=#>Developer</a></td>
+            </tr>
+            <tr>
+                <td><a href=#>Team</a></td>
+                <td><a href=#>Blog</a></td>
+                <td></td>
+                <td><a href=#>Accountant</a></td>
+            </tr>
+
+            </tr>
+        </table>
+    </div>
+    <div class="content-head">
+        <h3>Welcome, Leslie</h3><br>
+        <p>Tue, 07 June 2023</p>
+        <div class="content-head-notification">
+            <img src="images/notification-bing.png">
+        </div>
+        <div class="content-head-profile">
+            <img src="images/leslie.png" style="height: 35px;width: 35px;">
+        </div>
+        <div class="content-side1-rectangle1">
+            <img src="images/leslie.png" style="height: 45px;width: 45px;">
+            <h3>Leslie Alexander</h3>
+            <h6>UI/UX Designer </h6>
+            <div class="content-side1-rectangle1-rect">
+                <img src="images/upload 1.png" style="height: 20px;width: 20px;">
+                <p>RESUME</p>
+                <br><br>
+
+            </div>
+            <div class="content-side1-rectangle1-img1">
+                <ul>
+                    <li> <img src="images/sms.png"><span>alexanderleslie@mail.com</span>
+                        <br>
+                    </li>
+                    <li><img src="images/call.png" style="margin-left: 1px;margin-top: 33px; "><span>1234987</span></li>
+                    <li><img src="images/location.png"
+                            style="margin-left: 1px;margin-top: 68px; "><span>location</span><span><img
+                                src="images/edit-2.png" style="margin-left: 246px;margin-top: 68px;"></span></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="content-side1-rectangle2">
+            <h3>About Me</h3>
+            <p>Creative UI/UX artist and designer with talent for developing unique custom artwork. Innovative<br>
+                approach
+                to idea and concept development.
+                <br> Offering 5 years of expertise overseeing individual projects and brand development collections
+            </p>
+
+            <button
+                style="width: 30px;height:25px;margin-left: 261px;;margin-top: 189px;background-color: #FFFFFF;background-image: url(images/edit-2.png) ; border-color:#FFFFFF;border: none;">
+                <!-- <img src="" style="margin-left: 256px;margin-top: 1px;"> -->
+            </button>
+        </div>
+        <div class="content-side2-rectangle1">
+            <img src="images/light-bulb 1.png" style="margin-left: 20px;margin-top: 15px;"><span
+                style="margin-left: 30px;margin-top: -10px;line-height: 24px;"><b>Skills</b></span>
+            <ul>
+                <li
+                    style="color: #000000;margin-left: 70px;margin-top: 20px;line-height: 20px;font-size: 14px;opacity: 0.4;">
+                    UX
+                    research skills</li>
+                <li
+                    style="color: #000000;margin-left: 70px;margin-top: 18px;line-height: 20px;font-size: 14px;opacity: 0.4;">
+                    Wireframing and prototyping skills</li>
+                <li
+                    style="color: #000000;margin-left: 70px;margin-top: 18px;line-height: 20px;font-size: 14px;opacity: 0.4;">
+                    UX
+                    writing skills <img src="images/edit-2.png" style="margin-left: 426px;margin-top: -15px;"></li>
+               
+
+            </ul>
+        </div>
+        <div class="content-side2-rectangle2">
+            <img src="images/portfolio 1.png" style="margin-top: 15px;margin-left:20px ;"><span style="margin-top: 15px;margin-left:25px ;font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;">Education</span>
+            <div class=" content-side2-rectangle2-content">
+                <p>Bachelor of Arts - Design </p>
+                <p style="margin-top: -58px;">Field & Fort University</p>
+                <p style="margin-top: -55px;">Top 10 percentile of the class</p>
+                <p style="margin-top: -52px;"> Master of Arts - Graphic </p>
+                </p>
+            </div>
+            <div class=" content-side2-rectangle2-content2">
+                <p>Nov 13 - Dec 17</p>
+                <p style="margin-top: -55px;">Mansfield, Ohio </p>
+                <p style="margin-top: -30px;">Texas University</p>
+                <p>
+                    <img src="images/edit-2.png" style="margin-left: 100px;margin-top:-37px;position: absolute;">
+                </p>
+            </div>
+        </div>
+        <div class="content-side2-rectangle3">
+            <img src="images/bag.png" style="margin-top: 15px;margin-left:20px ;"><span style="font-family: 'Poppins';
+           font-style: normal;
+           font-weight: 400;
+           font-size: 16px;
+           line-height: 24px;margin-left: 25px;margin-top: 28px">Experience</span>
+            <ul style="list-style: circle;">
+                <li style="font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 23px;
+           margin-left: 70px;
+            
+            
+            color: #000000;
+            
+            opacity: 0.4;"> Advertising Speciality Institute, San Francisco, TX - Graphic Designer Dec ‘18 - June ‘20
+                </li>
+                <li style="font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 23px;
+       margin-left: 70px;
+        margin-top:10px;
+        
+        color: black;
+        
+        opacity: 0.4;">
+                    Advertising Age - Graphic Design Intern Jan 21 - Nov 22 <img src="images/edit-2.png"
+                        style="margin-left: 206px;margin-top: 5px;">
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

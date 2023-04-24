@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exercise2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="author" content="Anphy Jose">
+    <link rel='stylesheet' type='text/css' media='screen' href="styles/main1.css">
+    <style>
+        .side {
+            position: absolute;
+            width: 234px;
+            height: 963px;
+            left: 0px;
+            top: 0px;
+
+            background: #20A6FC;
+        }
+
+        .txt1 {
+            position: absolute;
+            height: 30px;
+            width: 226px;
+            margin-left: 34px;
+            margin-top: 1px;
+            Font-family: Open Sans;
+            font-style: Bold;
+            font-size: 25px;
+            line-height: 46px;
+            line-height: 100%;
+            align-items: Left;
+            vertical-align: Top;
+            color: white;
+        }
+
+        .txt2 {
+            margin-left: 28px;
+            margin-top: 180px;
+            width: 236px;
+            height: 288px;
+            position: absolute;
+        }
+
+        img:hover {
+            filter: brightness(70%);
+            color: aqua
+                /* Reduce the brightness of the image when it is hovered */
+        }
+
+        .txt2 a:link {
+            text-decoration: none;
+            color: white;
+        }
+
+        .txt2 a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        .txt2 ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .txt2 li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .list-item {
+            margin-left: 15px;
+            /* position: absolute; */
+        }
+
+        .txt3 {
+            font-family: DM Sans;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0px;
+            text-align: left;
+            position: absolute;
+            margin-top: 40px;
+            margin-left: 30px;
+            color: white;
+        }
+
+        .txt3-profile {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 4px 6px;
+            gap: 8px;
+
+            position: absolute;
+            width: 94px;
+            height: 14px;
+            left: 29px;
+            top: 59px;
+
+            background: #4CB32B;
+            border-radius: 4px;
+        }
+
+        /* .txt5{
+    position: absolute;
+width: 236px;
+height: 333px;
+left: 48px;
+margin-top: 800px;} */
+        .txt3 a:link {
+            text-decoration: none;
+            color: white;
+        }
+
+        .txt3 a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        .txt4 {
+            position: absolute;
+            left: 31px;
+            right: 84.24%;
+            top: 76.17%;
+            bottom: 53.23%;
+            /* width: 236px;
+            height: 488px; */
+        }
+
+        .txt4 a:link {
+            text-decoration: none;
+            color: white;
+        }
+
+        .txt4 a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        .txt4 ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .txt4 li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #3e8e41;
+        }
+
+        .img1 {
+            position: absolute;
+            left: 2.71%;
+            right: 93.96%;
+            top: 44.22%;
+            bottom: 53.23%;
+            height: 25px;
+            width: 25px;
+
+            /* background: url(dreamy-young-woman-sunglasses-looking-front); */
+        }
+
+        .person {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 30px;
+            right: 84.24%;
+            top: 56.17%;
+            bottom: 53.23%;
+        }
+
+        .person img {
+            margin-right: 20px;
+            position: absolute;
+            left: 2.71%;
+            right: 93.96%;
+            top: 44.22%;
+            bottom: 53.23%;
+            height: 35px;
+            width: 35px;
+        }
+
+        .info {
+            /* text-align: right; */
+            margin-top: 800px;
+            margin-left: 30px;
+            color: white;
+            position: absolute;
+        }
+
+
+        .logout {
+
+            width: 150px;
+            border-radius: 10px;
+            border: gray;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .content-head {
+            box-sizing: border-box;
+
+            position: absolute;
+            width: 1156px;
+            height: 76px;
+            left: 244px;
+            top: 0px;
+
+            background: #FFFFFF;
+            border-bottom: 1px solid #E7E7E7;
+        }
+
+        .content-head ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .content-head li {
+            display: inline-block;
+            /* Change the display property to inline-block */
+            margin-right: 20px;
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+
+        .content-head li:hover {
+            text-decoration: underline;
+            color: beige;
+        }
+
+        .align-right {
+            float: right;
+            margin-top: -30px;
+            margin-left: 400px;
+        }
+
+        .content-head-right {
+            position: absolute;
+            width: 343px;
+            height: 48px;
+            left: 983px;
+            top: 24px;
+        }
+
+        .content-head-right ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .content-head-right li {
+            display: inline-block;
+            /* Change the display property to inline-block */
+            margin-right: 20px;
+            /* margin-top:30px ;
+  margin-left:200px ; */
+        }
+
+        .content-head2 {
+            width: 1340px;
+            height: 890px;
+
+            background: #F6F6F6;
+            margin-top: 75px;
+
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+        .content-head2 button {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 12px;
+            gap: 8px;
+
+            position: absolute;
+            width: 255px;
+            height: 48px;
+            left: 281px;
+            top: 101px;
+            border: #FFFFFF;
+            background: #FFFFFF;
+            border-radius: 8px;
+        }
+
+        .content-head2-drop {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 12px;
+            gap: 8px;
+
+            position: absolute;
+            width: 139px;
+            height: 23px;
+            left: 571px;
+            top: 104px;
+            border: #FFFFFF;
+            background: #FFFFFF;
+            border-radius: 8px;
+        }
+
+        .content-rect1 {
+            position: absolute;
+            width: 953px;
+            height: 210px;
+            left: 276px;
+            top: 156px;
+            border: 1px solid rgb(190, 187, 187);
+        }
+
+        .content-rect1 button {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 4px 12px;
+            gap: 8px;
+            /* margin-top: 106px;
+margin-left: 30px; */
+            width: 125px;
+            height: 24px;
+            justify-content: space-between;
+            background: #CAC3AA;
+            border-radius: 24px;
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+        .content-rect1 button :hover {
+            color: green;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="side">
+        <div class="txt1">
+            <p>HireMe Now!</p>
+        </div>
+        <div class="txt2">
+
+            <ul>
+                <li><img src="images/buildings-2.png" alt="Image"><span class="list-item"><a href=#>All Jobs</a></span>
+                </li><br>
+                <li><img src=images/clipboard-text.png><span class="list-item"><a href=#>My Applications</a></span></li>
+                <br>
+                <li><img src="images/message-2.png" alt="Image"><span class="list-item"><a href=#>Messages</a></span>
+                </li><br>
+                <li><img src="images/profile.png" alt="Image"><span class="list-item"><a href=#>My Profile</a></span>
+                </li><br>
+                <li><img src="images/setting-2.png" alt="Image"><span class="list-item"><a href=#>Settings</a></span>
+                </li><br>
+            </ul>
+            <br><br><br><br><br><br>
+            <ul>
+                <li><img src="images/Group 1.png" alt="Image"><span class="list-item"><a href=#>Type of
+                            Employment<br>Fulltime jobs</a></span>
+                </li><br>
+                <li><img src=images/crown.png><span class="list-item"><a href=#>Experience Level<br>Mid Level</a></span>
+                </li>
+                <br>
+                <li><img src="images/camera.png" alt="Image"><span class="list-item"><a href=#>Salary
+                            Range<br>₹3000-₹5000</a></span>
+                </li><br>
+                <li><img src="images/loc.png" alt="Image"><span class="list-item"><a href=#>Location<br>South East Asia
+                        </a></span>
+                </li><br>
+                <li><img src="images/home.png" alt="Image"><span class="list-item"><a href=#>Onsite / Remote<br>Remote
+                            Job</a></span>
+                </li><br>
+            </ul>
+            <button style="border-radius: 8px;margin-left: 15px;height: 40px;width: 150px;">Edit Preference </button>
+
+        </div>
+
+        <div class="txt3">
+            <ul align="left" type="none">
+                <!-- <li>
+                    <small>Profile</small>
+                </li> -->
+                <li>
+                    <p>
+                        <img src="images/leslie.png" style="margin-top:10px;text-align: center;margin-left: 20px;"
+                            alt="profile image" width="50px" align="left">
+                        <br>
+                    <div class="txt3-profile">open to work</div>
+                    </p>
+                    <p style="margin-top:50px;text-align: center;margin-left: -20px;"> Leslie Alexander </p><br>
+                    <!-- <font size="2" face="DM Sans" color="black" align="center">
+                            Private Account
+                        </font> -->
+                    <p style="margin-top:-30px;text-align: center;margin-left: -20px;">alexanderleslie@mail.com </p>
+                    </p>
+                </li>
+                <li>
+                    <!-- <br>
+                    <button class="logout"> <img src="images/exit.png" alt="" width="25px"><a
+                            href="#">Logout</a></button> -->
+                    <!-- <b> Leslie Alexander </b> -->
+
+                </li>
+                <br>
+            </ul>
+        </div>
+
+    </div>
+    <div class="foot-1">
+        <div class="foot-side">
+            <div class="foot-side1">
+                <p>Get Notified every new job</p>
+
+                <p style="font-size: 25px;">Ideal platform for job seekers passionate about startups and
+
+                    seeking new career opportunities.</p>
+
+            </div>
+            <div class="foot-search">
+                <div class="foot-input">
+
+                    <p style="text-align: center;">Type your email address</p>
+                </div>
+                <button class="foot-button">Subscribe</button>
+            </div>
+
+        </div>
+        <div class="footer-main">
+            <div class="footer-main-title">
+                <h3>HireMe Now!</h3>
+            </div>
+            <div class="footer-main-title ">
+                <p>Ideal platform for job seekers
+                    passionate about startups and
+                    seeking new career opportunities.</p>
+            </div>
+            <div class="icon-container">
+                <a href="#"><img src="images/Subtract.png" alt="Icon 1"></a>
+                <a href="#"> <img src="images/Group 33789.png" alt="Icon 2"></a>
+                <a href="#"> <img src="images/linkedin icon.png" alt="Icon 3"></a>
+                <a href="#"> <img src="images/twitter icon.png" alt="Icon 4"></a>
+                <a href="#"> <img src="images/facebook icon.png" alt="Icon 5"></a>
+
+            </div>
+
+
+
+        </div>
+        <table class="footer-table">
+            <tr>
+                <th><a href=#>About us</a></th>
+                <th><a href=#>Company</a></th>
+                <th><a href=#>Support</a></th>
+                <th><a href=#>Service</a></th>
+            <tr>
+                <td><a href=#>About us</a></td>
+                <td><a href=#>Contact us</a></td>
+                <td><a href=#>Support</a></td>
+                <td><a href=#>SEO</a></td>
+            </tr>
+            <tr>
+                <td><a href=#>Home</a></td>
+                <td><a href=#>Career</a></td>
+                <td><a href=#>Privacy</a></td>
+                <td><a href=#>UI Design</a></td>
+            </tr>
+            <tr>
+                <td><a href=#>Feature</a></td>
+                <td><a href=#>Pricing</a></td>
+                <td><a href=#>FAQ</a></td>
+                <td><a href=#>Developer</a></td>
+            </tr>
+            <tr>
+                <td><a href=#>Team</a></td>
+                <td><a href=#>Blog</a></td>
+                <td></td>
+                <td><a href=#>Accountant</a></td>
+            </tr>
+
+            </tr>
+        </table>
+    </div>
+    <div class="content-head">
+        <ul>
+            <li>All Jobs</li>
+            <li>Saved Jobs</li>
+        </ul>
+
+    </div>
+    <div class="content-head-right">
+        <ul>
+            <li><img src="images/notification-bing.png"></li>
+            <li><img src="images/leslie.png" style="height: 30px;width:30px;"><span
+                    style="margin-top: 5px;position: absolute;margin-left: 10px;">Leslie Alexander</span></li>
+            <!-- <li>Leslie Alexander</li> -->
+        </ul>
+    </div>
+    <!--  -->
+    <div class="content-head2">
+        <button><img src="images/search-normal.png"><span>Search for Jobs</span></button>
+        <button style="margin-left: 485px;width:50px"><img src="images/setting-4.png"></button>
+        <!-- </div> -->
+        <div class="content-head2-drop">
+            <img src="images/loc.png"><span style="margin-left: 5px;">location <select
+                    style="margin-left: 8px;"></select></span>
+            <p style="margin-left: 490px;margin-top: 30px;position: absolute;">Sortby <span><select
+                        style="margin-left: 20px;margin-top: 5px;position: absolute;">
+                        <option>Newest Job</option>
+                    </select></span></p>
+        </div>
+        <div class="content-rect1">
+            <img src="images/aitrich.png" style="float: left;margin-left: 20px;margin-top: 20px;"><span
+                style="margin-left: 30px;margin-top: 20px;position: absolute;">Trainee Software Developer
+                <img src="images/archive-minus.png" style="margin-left: 600px;position: absolute;">
+                <p style="color: #20A6FC;">Cyber Infrastructure</p>
+            </span>
+            <p style="margin-left: 20px;margin-top: 100px;position: absolute;">We are looking for a UI/UX Designer to
+                turn our software into easy-to-use products for our clients.</p>
+           
+            <button style="margin-left: -260px;margin-top: 45px;position: absolute;">Full Time</button>
+            <button style="margin-left: -130px;margin-top: 45px;position: absolute;">Mid Level</button>
+            <button style="margin-left: 10px;margin-top: 45px;position: absolute;">$3000 - $5000</button>
+            <button style="margin-left: 160px;margin-top: 45px;position: absolute;">Indonesia</button>
+            <button style="margin-left: 300px;margin-top: 45px;position: absolute;">Onsite</button>
+            <button
+                style="margin-left: 525px;margin-top: 45px;position: absolute;width: 140px;height: 30px;background-color: #20A6FC;color: #FFFFFF;border-radius: 5px;text-align: center;">Apply
+                Job</button>
+        </div>
+
+        <div class="content-rect1" style="margin-top: 250px;">
+            <img src="images/linux.png" style="float: left;margin-left: 20px;margin-top: 20px;"><span
+                style="margin-left: 30px;margin-top: 20px;position: absolute;">Java Developer
+                <img src="images/archive-minus.png" style="margin-left: 680px;position: absolute;">
+                <p style="color: #20A6FC;">Regal Consulting</p>
+            </span>
+            <p style="margin-left: 20px;margin-top: 100px;position: absolute;">We are looking for a UI/UX Designer to
+                turn our software into easy-to-use products for our clients.</p>
+           
+            <button style="margin-left: -260px;margin-top: 45px;position: absolute;">Full Time</button>
+            <button style="margin-left: -130px;margin-top: 45px;position: absolute;">Mid Level</button>
+            <button style="margin-left: 10px;margin-top: 45px;position: absolute;">$3000 - $5000</button>
+            <button style="margin-left: 160px;margin-top: 45px;position: absolute;">Indonesia</button>
+            <button style="margin-left: 300px;margin-top: 45px;position: absolute;">Onsite</button>
+            <button
+                style="margin-left: 525px;margin-top: 45px;position: absolute;width: 140px;height: 30px;background-color: #20A6FC;color: #FFFFFF;border-radius: 5px;text-align: center;">Apply
+                Job</button>
+        </div>
+
+        <div class="content-rect1" style="margin-top: 500px;">
+            <img src="images/develper.png" style="float: left;margin-left: 20px;margin-top: 20px;"><span
+                style="margin-left: 30px;margin-top: 20px;position: absolute;">Software Development Test Engineer
+                <img src="images/archive-minus.png" style="margin-left: 530px;position: absolute;">
+                <p style="color: #20A6FC;">HyreFox Consultants</p>
+            </span>
+            <p style="margin-left: 20px;margin-top: 100px;position: absolute;">We are looking for a UI/UX Designer to
+                turn our software into easy-to-use products for our clients.</p>
+           
+            <button style="margin-left: -260px;margin-top: 45px;position: absolute;">Full Time</button>
+            <button style="margin-left: -130px;margin-top: 45px;position: absolute;">Mid Level</button>
+            <button style="margin-left: 10px;margin-top: 45px;position: absolute;">$3000 - $5000</button>
+            <button style="margin-left: 160px;margin-top: 45px;position: absolute;">Indonesia</button>
+            <button style="margin-left: 300px;margin-top: 45px;position: absolute;">Onsite</button>
+            <button
+                style="margin-left: 525px;margin-top: 45px;position: absolute;width: 140px;height: 30px;background-color: #20A6FC;color: #FFFFFF;border-radius: 5px;text-align: center;">Apply
+                Job</button>
+        </div>
+    </div>
+</body>
+
+</html>
